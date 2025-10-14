@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Companion — Local Ollama Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="app">
+    <header>
+      <h1>Companion</h1>
+      <p class="tagline">Trauma-informed companion for healthcare workers — not a replacement for therapy.</p>
+    </header>
+
+    <section class="chat">
+      <div id="messages" class="messages"></div>
+
+      <form id="inputForm" autocomplete="off">
+        <input id="userInput" placeholder="How are you feeling? (Try a short sentence)" />
+        <button type="submit">Send</button>
+      </form>
+
+      <div class="controls">
+        <label>
+          <input id="useTTS" type="checkbox" checked /> Play responses aloud (Web Speech API)
+        </label>
+        <label>
+          Gemini API Key (optional):
+          <input id="geminiKey" placeholder="Paste your Google API key here (optional)" />
+        </label>
+      </div>
+    </section>
+
+    <footer>
+      <small>
+        This tool is **not** a replacement for professional help. If you are in danger or a crisis, call local emergency services.
+      </small>
+    </footer>
+  </main>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>
