@@ -5,15 +5,22 @@ const userInput = document.getElementById('userInput');
 const useTTS = document.getElementById('useTTS');
 const geminiKeyInput = document.getElementById('geminiKey');
 
-const CRISIS_PATTERNS = [
-  /i want to die/i,
-  /kill myself/i,
-  /end my life/i,
-  /i'm going to (?:kill|hang|hurt|harm) myself/i,
-  /how to (?:kill|hang|overdose)/i,
-  /i can't go on/i,
-  /\bimmediate danger\b/i
-];
+import { isCrisisMessage, crisisResources } from './crisisResources.js';
+
+function handleUserInput(userMessage) {
+  if (isCrisisMessage(userMessage)) {
+    return {
+      type: 'crisis',
+      message: crisisResources,
+    };
+  }
+
+  // Continue to normal AI response logic
+  return {
+    type: 'normal',
+    message: generateResponse(userMessage),
+  };
+}
 
 function appendMessage(text, who='assistant'){
   const d = document.createElement('div');
