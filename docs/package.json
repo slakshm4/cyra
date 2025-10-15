@@ -1,0 +1,22 @@
+{
+  "name": "cyra",
+  "version": "1.0.0",
+  "description": "Cyra — An empathy-focused, trauma-informed AI chatbot",
+  "main": "app.js",
+  "scripts": {
+    "start": "npx serve",
+    "test": "echo \"No tests yet\""
+  },
+  "keywords": [
+    "cyra",
+    "chatbot",
+    "mental-health",
+    "AI",
+    "Ollama",
+    "Mistral"
+  ],
+  "author": "Shradha Lakshman",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
