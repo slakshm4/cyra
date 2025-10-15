@@ -48,14 +48,17 @@ Cyra runs locally using a fine-tuned **Mistral** model through **Ollama**, ensur
 
 ## File Structure
 
+<h2>🧩 File Structure</h2>
+<pre>
 cyra/
-├── app.js
-├── crisisRes.js
-├── index.html
-├── styles.css
-├── README.md
-├── package.json
-└── .gitignore
+├── CODE_OF_CONDUCT.md       - Guidelines for contributors and ethical usage
+├── CrisisRes.js             - Initial crisis regex patterns and resources
+├── LICENSE                  - MIT License with ethical guidelines and disclaimers
+├── README.md                - Documentation and setup instructions for Cyra
+├── app.js                   - Chatbot logic with crisis message handling
+├── index.html               - Web interface for Cyra
+└── style.css                - Styling for the chatbot interface
+</pre>
 
 ### Crisis Detection
 
