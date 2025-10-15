@@ -91,10 +91,10 @@ It is **not a substitute for therapy or emergency care**.
 
 ## License
 
-This project is licensed under the MIT license - please refer to License.md for further details.
+This project is licensed under the MIT license - please refer to org/License.md for further details.
 
 ---
 
 ## Code of Conduct
 
-Please refer to Code_of_Conduct.md for further details.
+Please refer to org/Code_of_Conduct.md for further details.
